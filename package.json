@@ -1,0 +1,35 @@
+{
+  "name": "service-gallery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "author": "njasi",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "pg": "^8.8.0",
+    "react-redux": "^8.0.2",
+    "react-toastify": "^9.0.8",
+    "redux": "^4.2.0",
+    "sequelize": "^6.21.4"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@babel/preset-react": "^7.18.6",
+    "eslint-plugin-react": "^7.31.7",
+    "webpack": "^5.74.0"
+  },
+  "exports": {
+    ".": "./service.config.js",
+    "./Config": "./service.config.js",
+    "./React": "./src/client/index.js",
+    "./Redux": "./src/client/store/index.js",
+    "./Admin": "./src/client/admin_components/index.js",
+    "./Express": "./src/server/api/index.js",
+    "./Database": "./src/server/db/index.js"
+  }
+}
